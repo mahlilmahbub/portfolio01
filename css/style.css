@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root{
+    --pimary-color:#edf2fc;
+    --secondary-color:#212121;
+    --btn-color :#212121;
+    --btn-color2 : #fff;
+  
+}
+.dark_theme {
+    --pimary-color:#000106;
+    --secondary-color:#fff;
+    --btn-color :#212121;
+}
+
+h1,h2,h3,h4,h5,h6 , p {
+    text-transform: capitalize;
+   
+}
+
+.whatProvide {
+    color: var(--secondary-color) ;
+    text-transform: capitalize;
+}
+.navbar ul li a{
+    color:var(--secondary-color);
+   
+}
+.container > a {
+    color:var(--secondary-color)
+}
+.body_area {
+    background-color:var(--pimary-color);
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+#about {
+    margin-top:150px;
+    margin-bottom:150px;
+}
+#services {
+    margin-top:80px;
+    margin-bottom: 150px;
+}
+.about_area > h1 {
+margin-top:150px;
+font-size:40px;
+color:var(--secondary-color)
+}
+.about_area p {
+    color:var(--secondary-color)
+}
+.color {
+    color:red;
+}
+.btn_area {
+   background-color: var(--secondary-color);
+    padding:7px 15px;
+    border:none;
+    border-radius: 5px;
+    color:var( --pimary-color);
+    margin-bottom: 50px;
+}
+ul li a {
+    color:#333;
+    text-transform:capitalize;
+}
+
+ul li a:hover {
+    color:red;
+}
+
+.box {
+    background:white;
+    box-shadow: 5px 5px 10px -10px;
+    padding: 10px;
+    height:450px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border:2px solid transparent;
+    margin-top:25px;
+}
+.box:hover {
+border: 2px solid orangered;
+cursor:pointer;
+
+}
+.box p {
+    text-align:center;
+    margin-top:5px;
+}
+.margin_middle {
+ margin-left:34%;
+}
+.box_2 {
+    border:2px solid cyan;
+}
+
+.contact_area {
+    background: #fceae8;
+    width: 100%;
+    height:auto;
+    margin-top:150px;
+    box-shadow: 10px 10px 10px -10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.size_max {
+    width: 50%;
+    margin:auto;
+    overflow: hidden;
+   
+}
+.size_max h2{
+    margin-top:40px;
+    margin-bottom: 10px;
+}
+#contact {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    animation: movedLeft 1s linear 1 ;
+    animation-delay: 7s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+}
+.footer {
+    text-transform: capitalize;
+    color: var( --secondary-color);
+}
+.btn_area2 {
+    background-color: var(--btn-color ); 
+    padding:7px 15px;
+    border:none;
+    border-radius: 5px;
+    color: var(--btn-color2) ;
+    margin-bottom: 50px;
+}
+span img {
+    width: 35px;
+}
+
+/* animited area  */
+
+
+.logo {
+    animation: movedown 1s linear 1 ;
+    animation-delay: 0s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.collapse {
+    animation: movedown 1s linear 1 ;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.about_area {
+    animation: movedRight 1s linear 1 ;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.whatProvide {
+    animation: movedRight 1s linear 1 ;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.img_box {
+    animation: zoomIn 1s linear 1 ;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+#Package {
+    animation: zoomIn 1s linear 1 ;
+    animation-delay: 5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.services {
+    animation: movedRight 1s linear 1 ;
+    animation-delay: 5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.myLatest {
+    animation: movedRight 1s linear 1 ;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.latest_work {
+    animation: zoomIn 1s linear 1 ;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.footer {
+    animation: movedRight 1s linear 1 ;
+    animation-delay: 8s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes movedRight {
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes movedLeft {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes zoomIn {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+
+/* btn design  */
+
+
+.switch {
+    width: 50px;
+    height: 25px;
+    background-color: #e5e5e5;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 100px;
+}
+.switch:before {
+    content: "";
+    position: absolute;
+    left:1.25px;
+    top:1.25px;
+    width: 47.5px;
+    height: 22.5px;
+    background-color: #fff;
+    border-radius: 95px;
+
+}
+.switch:after{
+content:"";
+width: 22px;
+height: 22px;
+border-radius: 86px;
+background-color: #fff;
+position: absolute;
+transition-duration: 500ms;
+top:1.25px;
+left:1.25px;
+box-shadow: 0 2px 4px #999;
+}
+.switchOn, .switchOn:before {
+    background-color: #4cd964 !important;
+}
+.switchOn::after{
+    left: 26.5px;
+}
+
+#aboutme {
+    text-align: justify;
+}
+.box2 {
+    background:white;
+    box-shadow: 5px 5px 10px -10px;
+    padding: 10px;
+   height: 300px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border:2px solid transparent;
+    margin-top:25px;
+}
+.myLatest {
+
+    margin-top: 100px !important;
+    margin-bottom: 80px !important;
+    color: var( --secondary-color);
+}
+#Package {
+    margin-top:100px;
+    margin-bottom:80px;
+    color: var( --secondary-color);
+}
